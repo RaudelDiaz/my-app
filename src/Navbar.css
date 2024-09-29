@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #fa8f04, #00c6ff);
+    color: green;
+    padding: 0px 50px;
+    border-radius: 1100px;
+    margin-bottom: 50px;
+    font-size: x-large;
+  }
+  
+  .navbar-title {
+    margin: 0;
+  }
+  
+  .navbar-logo {
+    width: 50px; 
+    height: auto; /* Maintain aspect ratio */
+    margin-right: -650px; /* This one hepled me to put the app name close to the logo */
+  }
+  
+  .navbar-buttons button {
+    margin-left: 5px;
+    margin-top: 5px;
+    background: linear-gradient(135deg, #fa8f04, #00c6ff);
+    color: green;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: x-large;
+   
+  }
+  
+  .navbar-buttons button:hover {
+    background: linear-gradient(135deg, #0044ff, #af0f8c);
+  }

@@ -24,6 +24,7 @@ h1 {
 input {
   padding: 15px;
   margin-right: 5px;
+  margin-top: 25px; /*Helped me to separate the input field from the span element */
   border: 1px solid #ccc;
   border-radius: 4px;
   width: calc(100% - 100px);
@@ -37,10 +38,12 @@ button {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 50px;
 }
 
 button:hover {
   background: linear-gradient(135deg, #0044ff, #af0f8c);
+ 
 }
 
 nav {
@@ -63,11 +66,6 @@ li {
 li:last-child {
   border-bottom: none;
 }
-
-span {
-  cursor: pointer;
-}
-
 .completed {
   text-decoration: line-through;
   color: gray;
@@ -84,4 +82,37 @@ span {
 .deleted {
   text-decoration: line-through;
   color: red;
+}
+.glowing {
+  color: white;
+  font-size: 40px; 
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.8), 
+    0 0 15px rgb(0, 255, 157), 
+    0 0 20px rgb(0, 247, 255), 
+    0 0 25px rgb(0, 255, 128); 
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 5px rgba(255, 255, 255, 0.6), 
+      0 0 10px rgba(255, 255, 255, 0.8), 
+      0 0 15px rgb(0, 255, 157),
+      0 0 20px rgb(0, 247, 255), 
+      0 0 25px rgb(0, 255, 128); 
+  }
+  to {
+    text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.8), 
+      0 0 20px rgb(251, 255, 0), 
+      0 0 20px rgb(251, 255, 0), 
+      0 0 20px rgb(251, 255, 0), 
+      0 0 20px rgb(251, 255, 0); 
+  }
+}
+span {
+  cursor: pointer;
 }

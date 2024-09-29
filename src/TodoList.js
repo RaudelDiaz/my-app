@@ -37,7 +37,7 @@ const TodoList = ({ filter }) => {
           <span className="deleted">{task.text}</span>
         </li>
       ));
-    } else { // 'uncompleted'
+    } else { 
       return tasks.filter(task => !task.completed).map(task => (
         <li key={task.id}>
           <span onClick={() => toggleTaskCompletion(task.id)}>{task.text}</span>
@@ -50,6 +50,7 @@ const TodoList = ({ filter }) => {
   return (
     <div className="todo-container">
       <h1>Todo List</h1>
+      <span className='glowing'>Click on the item to complete the task</span>
       <input
         type="text"
         value={taskInput}
