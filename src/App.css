@@ -116,3 +116,15 @@ li:last-child {
 span {
   cursor: pointer;
 }
+.clear-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+

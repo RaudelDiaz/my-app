@@ -24,6 +24,11 @@ const TodoList = ({ filter }) => {
     setTasks(tasks.filter(task => task.id !== id));
   };
 
+  const clearAllTasks = () => {
+    setTasks([]);
+    setDeletedTasks([]);
+  };
+
   const renderTasks = () => {
     if (filter === 'completed') {
       return tasks.filter(task => task.completed).map(task => (
@@ -57,7 +62,8 @@ const TodoList = ({ filter }) => {
         onChange={(e) => setTaskInput(e.target.value)}
         placeholder="Add a new task"
       />
-      <button onClick={addTask} clas>Add Task</button>
+      <button onClick={addTask}>Add Task</button>
+      <button onClick={clearAllTasks} className="clear-button">Clear All Tasks</button>
 
       <ul>
         {renderTasks()}
