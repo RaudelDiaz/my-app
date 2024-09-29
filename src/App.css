@@ -73,6 +73,7 @@ li:last-child {
 
 .delete-button {
   background-color: #dc3545;
+  margin-top: 0px;
 }
 
 .delete-button:hover {
