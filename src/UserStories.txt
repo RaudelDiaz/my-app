@@ -1,0 +1,3 @@
+As a user I want to be able to add new tasks
+As a user I want to be able to see the complete list of tasks
+AS a user I want to easily remove task

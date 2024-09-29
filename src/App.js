@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TodoList from './TodoList';
-import Navbar from './Navbar';
+//import Navbar from './Navbar';//
 import './App.css';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar setFilter={setFilter} />
+       {/*<Navbar setFilter={setFilter} />*/}
       <TodoList filter={filter} />
     </div>
   );
